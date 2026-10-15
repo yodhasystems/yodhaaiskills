@@ -7,7 +7,7 @@ Free Claude Code plugins from [Yodha Systems](https://patlas.dev).
 This repo is also a [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces). In Claude Code:
 
 ```
-/plugin marketplace add yodhasystems-crypto/yodhaaiskills
+/plugin marketplace add yodhasystems/yodhaaiskills
 /plugin install patlas@yodhaaiskills
 ```
 
@@ -30,7 +30,7 @@ If you're on an older Claude Code version without plugin support, you can still 
 ```sh
 mkdir -p .claude/skills/patent-scan
 curl -o .claude/skills/patent-scan/SKILL.md \
-  https://raw.githubusercontent.com/yodhasystems-crypto/yodhaaiskills/main/plugins/patlas/skills/patent-scan/SKILL.md
+  https://raw.githubusercontent.com/yodhasystems/yodhaaiskills/main/plugins/patlas/skills/patent-scan/SKILL.md
 ```
 
 You'll also need to connect the Patlas MCP server yourself in that case — see [patlas.dev](https://patlas.dev).
