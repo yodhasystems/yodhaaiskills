@@ -21,9 +21,17 @@ Run `/reload-plugins` if the install summary asks you to.
 |---|---|---|
 | [`patlas`](plugins/patlas) | `/patlas:patent-scan` | Scans a codebase and its docs for distinct technical mechanisms, then checks each candidate against prior art via the [Patlas](https://patlas.dev) MCP server's `search_prior_art`/`compare_claims` tools. |
 
-## Not using Claude Code's plugin system?
+## Cursor
 
-Skills (`SKILL.md` slash commands) are Claude-Code-specific — other editors (Cursor, Windsurf, VS Code + Copilot Chat, etc.) don't have an equivalent mechanism. But the underlying capability is available to **any** MCP-compatible client: just connect your client to `https://patlas.dev/mcp` (sign in with GitHub or Google, no API key needed) and describe what you want scanned in plain English — the connected assistant can drive the same `search_prior_art`/`compare_claims` tools directly. See [patlas.dev](https://patlas.dev) for client-specific connection instructions.
+The same `patlas` plugin works in Cursor: it adds the `patent-scan` skill and connects the Patlas MCP server. Install it from [Cursor Directory](https://cursor.directory) (search "patlas"), or connect just the server with this one-click link:
+
+```
+cursor://anysphere.cursor-deeplink/mcp/install?name=patlas&config=eyJ1cmwiOiJodHRwczovL3BhdGxhcy5kZXYvbWNwIn0=
+```
+
+## Other editors
+
+Editors without a plugin system (Windsurf, VS Code + Copilot Chat, etc.) can still use Patlas through any MCP-compatible client: just connect your client to `https://patlas.dev/mcp` (sign in with GitHub or Google, no API key needed) and describe what you want scanned in plain English — the connected assistant can drive the same `search_prior_art`/`compare_claims` tools directly. See [patlas.dev](https://patlas.dev) for client-specific connection instructions.
 
 If you're on an older Claude Code version without plugin support, you can still copy the skill file manually:
 
